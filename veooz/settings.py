@@ -36,6 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'djangotoolbox',
 
     'rss_view'
 )
@@ -45,7 +46,6 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
@@ -59,14 +59,19 @@ WSGI_APPLICATION = 'veooz.wsgi.application'
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django_mongodb_engine',
-        'NAME': 'veooz',
-        'OPTIONS': {
-                'socketTimeoutMS': 500,
-            }
-    }
+   'default': {
+#    'ENGINE': 'django.db.backends.mysql',
+#    'NAME':'rss_feed',
+#    'USER': 'root',
+#    'PASSWORD': 'root'
+#    },
+#
+#   'activity_db' : {
+      'ENGINE' : 'django_mongodb_engine',
+      'NAME' : 'rss_feed'
+   }
 }
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/
