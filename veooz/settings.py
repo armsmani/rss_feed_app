@@ -68,7 +68,7 @@ DATABASES = {
 #
 #   'activity_db' : {
       'ENGINE' : 'django_mongodb_engine',
-      'NAME' : 'rss_feed'
+      'NAME' : 'rssfeed'
    }
 }
 
