@@ -27,3 +27,7 @@ def feed_render(request):
                 for news in newsDetails]
     result = json.dumps(data)
     return HttpResponse(result, content_type="application/json")
+
+
+def feed_display(request):
+    return render(request, 'feed_render.html', {'result': None})
