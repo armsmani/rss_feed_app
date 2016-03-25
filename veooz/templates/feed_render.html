@@ -2,139 +2,78 @@
 {% load static %}
 {% block feed %}
 
-<div class="simple-feed-card card feed-item feed-element news" data-post-offset="1" data-link-id="7KZ9Ek2"  data-has-story="true" data-has-veooz360="true" data-web-url="http://www.business-standard.com/article/economy-policy/monetary-policy-committee-is-for-economy-s-interest-rajan-116031200685_1.html" data-language="en" data-show-summary="enabled" data-show-stories="enabled" data-show-buzz="enabled">
-    <div class="media-content">
-        <div class="feed-item-photo feed-item-share" data-post-type="news">
-            <div class="feed-item-photo-container clipv  bg1  feed-item-news-photo-container feed-mobile-story-view">
-                <img class="feed-item-news-photo" src="https://imb.veooz.com/jK/Al/jKLg2Al-large.jpg">
-                <div class="feed-item-photo-gradient" ></div>
-            </div>
-        </div>
-    </div>
-    <div class="data-content">
-        <div class="suggestions-block">
-            <a class="suggestions-select-item possible-suggestion" href="/in/business" data-id="IN_BUSINESS" data-name="Business (India)" data-url="/template?pageType=topic&amp;topicId=IN_BUSINESS&amp;langEdition=en" data-followed="false" data-type="category" data-show-follow="enabled" data-target="new">Business (India)</a>
-            <a class="suggestions-select-item possible-suggestion" href="/topic/india.html" data-id="india" data-name="India" data-url="/template?pageType=topic&amp;topicId=india&amp;langEdition=en" data-followed="false" data-type="topic" data-show-follow="enabled" data-target="new">India</a>
-            <a class="suggestions-select-item possible-suggestion" href="/topic/raghuram_rajan.html" data-id="raghuram_rajan" data-name="Raghuram Rajan" data-url="/template?pageType=topic&amp;topicId=raghuram_rajan&amp;langEdition=en" data-followed="false" data-type="topic" data-show-follow="enabled" data-target="new">Raghuram Rajan</a>
-        </div>
-        <div class="feed-item-title">
-            <h2><a class="title-url" href="http://www.business-standard.com/article/economy-policy/monetary-policy-committee-is-for-economy-s-interest-rajan-116031200685_1.html" target="_blank" rel="nofollow">Monetary Policy committee is in economy&#x27;s interest: Rajan</a></h2>
-        </div>
-        <div class="news-source-info">
-            <a href="/site/www.business-standard.com" class="post-screen-name news-source"  data-id="business-standard.com" data-name="from Business Standard" data-url="/template?pageType=topic&topicId=business-standard.com" data-followed="false" data-type="topic" data-show-follow="hidden" data-target="new">
-                Business Standard
-            </a>
-            <span class="middot">&middot;</span>
-                    <time class="timeago" datetime="2016-03-12T14:36:19.393Z" data-timestamp="1457793379393">39 mins ago</time>
-        </div>
-        <p class="feed-item-text">
-            <span class="summary-content">&quot;While the RBI Governor will no longer be able to set monetary policy unilaterally, I believe shifting the decision to a committee is in the economy&#x27;s interest. Not only will a committee aggregate multiple views better than an individual can, it will offer more continuity, and be less subject to undue pressure,&quot; Rajan said in the first Ramnath Goenka Memorial Lecture in New Delhi. </span>
-        </p>
-    </div>
-    <div class="feed-item-actions">
-        <div id="share-wrapper" class="share-wrapper">
-            <span class="favourite-link fav" title="Save for later">
-                <img alt="Favorite" class="vz feedview-favorite-icon" src='{% static "images/share_light.png" %}' />
-            </span>
-            <div class="more-options" title="click here to share">
-                <img alt="More" class="vz share-expand-icon-17x17" src='{% static "images/share_light.png" %}'>
-            </div>
-            <div class="box-news-share default-hidden hidden">
-                <div class="share-icons">
-                    <a rel="nofollow" class="pop facebook f1-share" data-network="facebook" title="Share this page on facebook" href="/sharelink?channel=facebook&amp;link=7KZ9Ek2">
-                        <img class="vz feedview-facebook-share-icon" src="/assets/images/transparent.png" />
-                    </a>
-                    <a rel="nofollow" class="pop twitter f1-share" data-network="twitter" title="Share this page on twitter" href="/sharelink?channel=twitter&amp;link=7KZ9Ek2">
-                        <img class="vz feedview-twitter-share-icon" src="/assets/images/transparent.png" />
-                    </a>
-                    <a rel="nofollow" class="pop show-mobile whatsapp f1-share" data-network="whatsapp" title="Share this page on whatsapp" href="/sharelink?channel=whatsapp&amp;link=7KZ9Ek2">
-                        <img class="vz feedview-whatsapp-share-icon" src="/assets/images/transparent.png" />
-                    </a>
-                    <a rel="nofollow" class="pop hide-mobile googleplus f1-share" data-network="googleplus" title="Share this page on googleplus" href="/sharelink?channel=googleplus&amp;link=7KZ9Ek2">
-                        <img class="vz feedview-google-plus-share-icon" src="/assets/images/transparent.png" />
-                    </a>
-                    <a rel="nofollow" class="pop hide-mobile pinterest f1-share share-hide-custom" data-network="pinterest" title="Share this page on pinterest" href="/sharelink?channel=pinterest&amp;link=7KZ9Ek2">
-                        <img class="vz feedview-pinterest-share-icon" src="/assets/images/transparent.png" />
-                    </a>
-                    <a rel="nofollow" class="pop email f1-share share-hide-custom" data-network="email" title="Share this page on email" href="/sharelink?channel=email&amp;link=7KZ9Ek2">
-                        <img class="vz feedview-mail-icon" src="/assets/images/transparent.png" />
-                    </a>
+{% if rss_details %}
+  {% for rss_detail in rss_details %}
+    <div class="simple-feed-card card feed-item feed-element news" data-post-offset="1" data-link-id="7KZ9Ek2"  data-has-story="true" data-has-veooz360="true" data-web-url="http://www.business-standard.com/article/economy-policy/monetary-policy-committee-is-for-economy-s-interest-rajan-116031200685_1.html" data-language="en" data-show-summary="enabled" data-show-stories="enabled" data-show-buzz="enabled">
+        <div class="media-content">
+            <div class="feed-item-photo feed-item-share" data-post-type="news">
+                <div class="feed-item-photo-container clipv  bg1  feed-item-news-photo-container feed-mobile-story-view">
+                    <img class="feed-item-news-photo" src="https://imb.veooz.com/jK/Al/jKLg2Al-large.jpg">
+                    <div class="feed-item-photo-gradient" ></div>
                 </div>
             </div>
         </div>
-        <a class="v360-simple-button-link" title="full coverage" href="http://www.veooz.com/news/7KZ9Ek2.html#360">
-            <div class="buzz-v360-wrapper">
-                <img class="vz v360-icon"  src="/media/images/360.png" />
+        <div class="data-content">
+            <div class="suggestions-block">
             </div>
-        </a>
-    </div>
-</div>
-<div class="simple-feed-card card feed-item feed-element news" data-post-offset="2" data-link-id="fKZ9C6x"  data-has-story="true" data-has-veooz360="true" data-web-url="http://www.firstpost.com/politics/friends-again-in-bihar-pm-modi-slams-congress-lauds-nitish-2671902.html" data-language="en" data-show-summary="enabled" data-show-stories="enabled" data-show-buzz="enabled">
-			<div class="media-content">
-				<div class="feed-item-photo feed-item-share" data-post-type="news">
-					<div class="feed-item-photo-container clipv  bg2  feed-item-news-photo-container feed-mobile-story-view">
-						<img class="feed-item-news-photo" src="https://imd.veooz.com/7K/74/7KZ9C74-large.jpg">
-						<div class="feed-item-photo-gradient" ></div>
-					</div>
-				</div>
-			</div>
-			<div class="data-content">
-				<div class="suggestions-block">
-					<a class="suggestions-select-item possible-suggestion" href="/in/news/politics" data-id="IN_NEWS_POLITICS" data-name="Politics (India)" data-url="/template?pageType=topic&amp;topicId=IN_NEWS_POLITICS&amp;langEdition=en" data-followed="false" data-type="category" data-show-follow="enabled" data-target="new">Politics (India)</a>
-					<a class="suggestions-select-item possible-suggestion" href="/topic/narendra_modi.html" data-id="narendra_modi" data-name="Narendra Modi" data-url="/template?pageType=topic&amp;topicId=narendra_modi&amp;langEdition=en" data-followed="false" data-type="topic" data-show-follow="enabled" data-target="new">Narendra Modi</a>
-					<a class="suggestions-select-item possible-suggestion" href="/topic/nitish_kumar.html" data-id="nitish_kumar" data-name="Nitish Kumar" data-url="/template?pageType=topic&amp;topicId=nitish_kumar&amp;langEdition=en" data-followed="false" data-type="topic" data-show-follow="enabled" data-target="new">Nitish Kumar</a>
-				</div>
-				<div class="feed-item-title">
-					<h2><a class="title-url" href="http://www.firstpost.com/politics/friends-again-in-bihar-pm-modi-slams-congress-lauds-nitish-2671902.html" target="_blank" rel="nofollow">Friends again: In Bihar, PM Modi slams Congress, lauds Nitish</a></h2>
-				</div>
-				<div class="news-source-info">
-					<a href="/site/www.firstpost.com" class="post-screen-name news-source"  data-id="firstpost.com" data-name="from Firstpost" data-url="/template?pageType=topic&topicId=firstpost.com" data-followed="false" data-type="topic" data-show-follow="hidden" data-target="new">
-					Firstpost
-					</a>
-					<span class="middot">&middot;</span>
-					<time class="timeago" datetime="2016-03-12T14:31:54.437Z" data-timestamp="1457793114437">43 mins ago</time>
-				</div>
-				<p class="feed-item-text">
-					<span class="summary-content">&quot;This project was initiated when Nitish Kumar was Railway Minister and Atal ji was Prime Minister. The dream of that time is being realised now. Prime Minister Narendra Modi with Bihar Chief Minister Nitish Kumar during inaugural function of Digha-Sonepur rail-cum-road bridge in Hajipur on Saturday. PTI would have been completed in six-seven years,&quot; Modi said dedicating to the nation the newly constructed Digha-Sonepur rail-cum-road bridge here, which is stated to be the longest in the country. </span>
-				</p>
-			</div>
-			<div class="feed-item-actions">
-				<div id="share-wrapper" class="share-wrapper">
-					<span class="favourite-link fav" title="Save for later">
-						<img alt="Favorite" class="vz feedview-favorite-icon" src="/assets/images/transparent.png" />
-					</span>
-					<div class="more-options" title="click here to share">
-						<img alt="More" class="vz share-expand-icon-17x17" src="/assets/images/transparent.png">
-					</div>	
-				<div class="box-news-share default-hidden hidden">
-			<div class="share-icons">
-				<a rel="nofollow" class="pop facebook f1-share" data-network="facebook" title="Share this page on facebook" href="/sharelink?channel=facebook&amp;link=fKZ9C6x">
-					<img class="vz feedview-facebook-share-icon" src="/assets/images/transparent.png" />
-				</a>
-				<a rel="nofollow" class="pop twitter f1-share" data-network="twitter" title="Share this page on twitter" href="/sharelink?channel=twitter&amp;link=fKZ9C6x">
-					<img class="vz feedview-twitter-share-icon" src="/assets/images/transparent.png" />
-				</a>
-				<a rel="nofollow" class="pop show-mobile whatsapp f1-share" data-network="whatsapp" title="Share this page on whatsapp" href="/sharelink?channel=whatsapp&amp;link=fKZ9C6x">
-					<img class="vz feedview-whatsapp-share-icon" src="/assets/images/transparent.png" />
-				</a>
-				<a rel="nofollow" class="pop hide-mobile googleplus f1-share" data-network="googleplus" title="Share this page on googleplus" href="/sharelink?channel=googleplus&amp;link=fKZ9C6x">
-					<img class="vz feedview-google-plus-share-icon" src="/assets/images/transparent.png" />
-				</a>
-				<a rel="nofollow" class="pop hide-mobile pinterest f1-share share-hide-custom" data-network="pinterest" title="Share this page on pinterest" href="/sharelink?channel=pinterest&amp;link=fKZ9C6x">
-					<img class="vz feedview-pinterest-share-icon" src="/assets/images/transparent.png" />
-				</a>
-				<a rel="nofollow" class="pop email f1-share share-hide-custom" data-network="email" title="Share this page on email" href="/sharelink?channel=email&amp;link=fKZ9C6x">
-					<img class="vz feedview-mail-icon" src="/assets/images/transparent.png" />
-				</a>
-			</div>
-		</div>						
-	</div>
-	    <a class="v360-simple-button-link" title="full coverage" href="http://www.veooz.com/news/fKZ9C6x.html#360">
-            <div class="buzz-v360-wrapper">
-                <img class="vz v360-icon"  src="/assets/images/transparent.png" />
+            <div class="feed-item-title">
+                <h2>
+                    <a class="title-url"
+                        href={{rss_detail.link}}
+                        target="_blank" rel="nofollow">
+                        {{ rss_detail.title }}
+                    </a>
+                </h2>
             </div>
-		</a>
-</div>
-</div>
+            <div class="news-source-info">
 
+            </div>
+            <p class="feed-item-text">
+                <span class="summary-content">
+                    {{rss_detail.summary}}
+                </span>
+            </p>
+        </div>
+        <div class="feed-item-actions">
+            <div id="share-wrapper" class="share-wrapper">
+                <span class="favourite-link fav" title="Save for later">
+                    <img alt="Favorite" class="vz feedview-favorite-icon" src='{% static "images/share_light.png" %}' />
+                </span>
+                <div class="more-options" title="click here to share">
+                    <img alt="More" class="vz share-expand-icon-17x17" src='{% static "images/share_light.png" %}'>
+                </div>
+                <div class="box-news-share default-hidden hidden">
+                    <div class="share-icons">
+                        <a rel="nofollow" class="pop facebook f1-share" data-network="facebook" title="Share this page on facebook" href="/sharelink?channel=facebook&amp;link=7KZ9Ek2">
+                            <img class="vz feedview-facebook-share-icon" src="/assets/images/transparent.png" />
+                        </a>
+                        <a rel="nofollow" class="pop twitter f1-share" data-network="twitter" title="Share this page on twitter" href="/sharelink?channel=twitter&amp;link=7KZ9Ek2">
+                            <img class="vz feedview-twitter-share-icon" src="/assets/images/transparent.png" />
+                        </a>
+                        <a rel="nofollow" class="pop show-mobile whatsapp f1-share" data-network="whatsapp" title="Share this page on whatsapp" href="/sharelink?channel=whatsapp&amp;link=7KZ9Ek2">
+                            <img class="vz feedview-whatsapp-share-icon" src="/assets/images/transparent.png" />
+                        </a>
+                        <a rel="nofollow" class="pop hide-mobile googleplus f1-share" data-network="googleplus" title="Share this page on googleplus" href="/sharelink?channel=googleplus&amp;link=7KZ9Ek2">
+                            <img class="vz feedview-google-plus-share-icon" src="/assets/images/transparent.png" />
+                        </a>
+                        <a rel="nofollow" class="pop hide-mobile pinterest f1-share share-hide-custom" data-network="pinterest" title="Share this page on pinterest" href="/sharelink?channel=pinterest&amp;link=7KZ9Ek2">
+                            <img class="vz feedview-pinterest-share-icon" src="/assets/images/transparent.png" />
+                        </a>
+                        <a rel="nofollow" class="pop email f1-share share-hide-custom" data-network="email" title="Share this page on email" href="/sharelink?channel=email&amp;link=7KZ9Ek2">
+                            <img class="vz feedview-mail-icon" src="/assets/images/transparent.png" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a class="v360-simple-button-link" title="full coverage" href="http://www.veooz.com/news/7KZ9Ek2.html#360">
+                <div class="buzz-v360-wrapper">
+                    <img class="vz v360-icon"  src="/media/images/360.png" />
+                </div>
+            </a>
+        </div>
+    </div>
+  {% endfor %}
+{% else %}
+  <h2> No Data Available </h2>
+{% endif %}
 {% endblock %}
